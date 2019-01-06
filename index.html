@@ -2,15 +2,146 @@
 <html>
   <head>
     <title>Adli Raihan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <style>
+        @media only screen and (max-width: 500px) {
+          #childrenmenu{
+            display: none !important;
+          }
+          #boxfoto{
+              margin-top: 25% !important;
+              margin-left: 25%;
+          }
+          #foto{
+          position: absolute !important;
+          width: 100%;
+          }
+          #mydesc{
+            top: 150px;
+            position: absolute;
+            width: 250px !important;
+          }
+          #mydesc>*{
+            text-align: center !important;
+          }
+        }
+        @media only screen and (max-width: 400px){
+          #boxfoto{
+              margin-top: 25% !important;
+              margin-left: 15%;
+          }
+        }
+        body{
+          background-color: #dfe6e9 !important;
+          color: #2d3436;
+        }
+        .link-thibobs{
+          color: #718093;
+          text-decoration: none !important;
+          transition: all 1s ease-out;
+        }
+        .link-thibobs:hover{
+          color: #353b48;
+        }
+        .information-link{
+          color: #2d3436 !important;
+          font-size: 12px;
+        }
+        .dummytext-small{
+          font-size: 10px;
+        }
+        .content-center-alone{
+          margin-top: 8%;
+        }
+        .minwidth-costum{
+          margin: 0 auto;
+          max-width: 600px;
+        }
+        .box{
+          height: 150px;
+        }
+        #childrenmenu{
+          display: none;
+        }
+        #parentmenu{
+          cursor: pointer;
+        }
+        #parentmenu:hover>#childrenmenu{
+          display: block;
+        }
+        .border-width-1{
+          float: right;
+          width: 20%;
+          height: 1px;
+          background: black;
+        }
+    </style>
   </head>
   <body>
-    <div class="contaier-fluid">
-      <div class="row m-0">
-        <h1 class="display-4 text-center">Hello This is my First Fortofolio web Update Later</h1>
+    <div class="container content-center-alone">
+
+      <div class="row m-0 box">
+        <div class="col-12 text-center">
+          <h4>Thibobs Portofolio</h4>
+          <p class="dummytext-small text-muted">This design is temporary</p>
+          <hr/>
+        </div>
+        <div id="parentmenu" class="col text-center">
+          <h6><a href="https://github.com/thibobs" class="nav-link  link-thibobs">Github.io</a></h6>
+          <div id="childrenmenu">
+            <p class="text-muted information-link">Lihat keseluruhan repository.</p>
+          </div>
+          <hr/>
+        </div>
+
+        <div id="parentmenu" class="col text-center">
+          <h6><a href="https://drive.google.com/file/d/1aZu-g-dcCRRNkIuIkw8UY6iOQNatvor9/view" class="nav-link  link-thibobs">CV</a></h6>
+          <div id="childrenmenu">
+            <p class="text-muted information-link">Download my CV</p>
+          </div>
+          <hr/>
+        </div>
+
+        <div id="parentmenu" class="col text-center">
+          <h6><a href="https://github.com/thibobs/gmaker" id="fortobtn" class="nav-link  link-thibobs">Fortofolio</a></h6>
+          <div id="childrenmenu">
+            <p class="text-muted information-link">This is my very first serious project open source about scheduling / agenda apps.</p>
+          </div>
+          <hr/>
+        </div>
+
+        <div id="parentmenu" class="col text-center">
+          <h6><a href="https://twitter.com/adli_raihan" class="nav-link link-thibobs">Twitter</a></h6>
+          <div id="childrenmenu">
+            <p class="text-muted information-link">Tweeting my own life , anyway my account has been locked for 4 years .</p>
+          </div>
+          <hr/>
+        </div>
+        <div class="col-12">
+        </div>
+      </div>
+
+      <div id="boxfoto" class="row minwidth-costum mt-5 position-relative">
+        <div id="foto" class="col-3">
+          <img src="photoprofile.jpg"  height="180px" class="rounded-circle border">
+        </div>
+        <div id="mydesc" class="col text-right content-center mt-5">
+          <h3>Hello , I'm Adli Raihan</h3>
+          <h5>Android Developer</h5>
+          <p class="text-muted information-link">Currently study at widyatama university</p>
+        </div>
       </div>
     </div>
+
+    <!-- script -->
+    <script>
+     $(document).ready(function(){
+       //nanti
+     });
+    </script>
   </body>
 </html>
